@@ -1,0 +1,476 @@
+/* styles.css */
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    padding-top: 65px;
+}
+
+header {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
+}
+
+/* text styles */
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p {
+    color: rgb(255, 251, 251);
+    margin: 10px 0;
+    font-size: .9em;
+    text-align: center;
+}
+
+/* nav styles */
+.navbar {
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #070707; /* importante para que no sea transparente */
+}
+
+/* form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+div.submit-button {
+    text-align: center;
+}
+
+div.selection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #45a049;
+}
+
+/* video styles */
+
+
+iframe {
+    display: flex;
+    justify-content: end;
+    width: 600px;
+    height: 338px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 8px;        
+}
+.padregrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: gray;
+}   
+.quienesomos {
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.quienesomos h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+/* footer styles */
+footer {
+    color: rgb(7, 4, 4);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: rgb(243, 241, 241);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(1, 143, 43);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* tarjetas de servicios */
+.card-container {
+    display: flex; /* Organiza las tarjetas en fila */
+    flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea */
+    gap: 20px; /* Espacio entre tarjetas */
+    justify-content: center; /* Centra las tarjetas */
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Para que la imagen no se salga */
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-image-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #333;
+}
+
+.card-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+
+.whatsapp-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #25D366; /* Color oficial de WhatsApp */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #128C7E; /* Verde más oscuro al pasar el cursor */
+}
+
+/* Estilos para el carrusel */
+
+/* HERO FULLSCREEN */
+#carouselExampleCaptions {
+  height: calc(100vh - 56px);
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+  height: 100%;
+}
+
+#carouselExampleCaptions img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* Estilos para la cuadrícula padre */
+
+
+.gridPadre{
+    width: 800px;
+    height: 500px;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "itemuno itemdos itemdos"
+    "itemuno itemtres itemcuatro"
+    "itemuno itemcinco itemseis";
+}
+
+.gridPadre div {
+    border: 1px solid black;
+}
+
+.areauno {
+    grid-area: itemuno;
+}
+.areados {
+    grid-area: itemdos;
+}
+.areatres {
+    grid-area: itemtres;
+}
+.areacuatro {
+    grid-area: itemcuatro;
+}
+.areacinco {
+    grid-area: itemcinco;
+}
+.areaseis {
+    grid-area: itemseis;
+}
+
+@media screen and (max-width: 700px) {
+  .gridPadre{
+    width: 400px;
+    height: 600px;
+    background-color: green;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+    "itemuno"
+    "itemdos"
+    "itemtres"
+    "itemcuatro"
+    "itemcinco"
+    "itemseis";
+}
+
+.gridPadre div {
+    border: 1px solid black;
+}
+
+.areauno {
+    grid-area: itemuno;
+}
+.areados {
+    grid-area: itemdos;
+}
+.areatres {
+    grid-area: itemtres;
+}
+.areacuatro {
+    grid-area: itemcuatro;
+}
+.areacinco {
+    grid-area: itemcinco;
+}
+.areaseis {
+    grid-area: itemseis;
+}
+}
+
+/* Estilos adicionales */
+.carousel-caption { 
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 1em; 
+}   
+.carousel-caption h3 { 
+    margin: 0; 
+    font-size: 1.2em; 
+}
+.carousel-caption p { 
+    margin: 5px 0 0; 
+    font-size: 0.9em; 
+}
+.carousel-caption a { 
+    color: #ffd700; 
+    text-decoration: underline; 
+}
+.carousel-caption a:hover { 
+    color: #ffa500; 
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-item img {
+    display: block;
+}
+.carousel-item img.lazy {
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+.carousel-item img.lazy.loaded {
+    filter: blur(0);
+}
+.carousel-loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+.carousel-item img.lazy.loaded + .carousel-loading-spinner {
+    display: none;
+}
+.carousel-item img.lazy:not(.loaded) + .carousel-loading-spinner {
+    display: block;
+}
+
+/* porfolio de clientes */
+
+.clients-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.clients-section h2 {
+  margin-bottom: 40px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.client-card {
+  
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.4s ease; /* Transición suave */
+  cursor: pointer;
+}
+
+.client-card img {
+  max-width: 100%;
+  max-height: 50px;
+  filter: grayscale(100%); /* Convierte a blanco y negro */
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+/* EFECTO HOVER */
+.client-card:hover {
+  transform: translateY(-8px); /* Elevación */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: #25D366; /* Opcional: borde del color de tu marca */
+}
+
+.client-card:hover img {
+  filter: grayscale(0%); /* Recupera el color original */
+  opacity: 1;
+  transform: scale(1.1); /* Ligero aumento de tamaño */
+}
+
