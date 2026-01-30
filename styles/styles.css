@@ -378,9 +378,11 @@ footer p {
 /* porfolio de clientes */
 
 .clients-section {
-  padding: 80px 20px;
-  text-align: center;
+  padding: 60px 20px;
+  height: auto;
+  min-height: auto;
 }
+
 
 .clients-grid {
   display: grid;
@@ -425,3 +427,32 @@ footer p {
   opacity: 1;
 }
 
+
+
+@media (max-width: 992px) and (min-width: 577px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .clients-section {
+    padding: 40px 15px;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr; /* ← una sola columna */
+    gap: 20px;
+  }
+
+  .client-card {
+    padding: 25px;
+    min-height: 120px;
+  }
+
+  .client-card img {
+    max-height: 80px;
+  }
+}
