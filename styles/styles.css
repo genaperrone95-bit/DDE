@@ -57,6 +57,12 @@ p {
 
 /* form styles */
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
 
 form {
     width: 100%;
@@ -127,7 +133,7 @@ form button:hover {
 footer {
     color: rgb(7, 4, 4);
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -418,3 +424,4 @@ footer p {
   filter: grayscale(0%);
   opacity: 1;
 }
+
