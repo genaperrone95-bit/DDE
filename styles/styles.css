@@ -1,5 +1,12 @@
 /* styles.css */
 
+div.formato {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+}
+
 
 body {
     font-family: "Roboto", sans-serif;
@@ -49,24 +56,29 @@ p {
 }
 
 /* form styles */
+
+
 form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
 }
-form label {
-    display: block;
-    margin-bottom: 10px;
+form label {    
+    margin-bottom: -3px;
     font-weight: bold;
 }
 
 
 form input, form textarea {
-    width: 100%;
-    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -76,13 +88,6 @@ div.submit-button {
     text-align: center;
 }
 
-div.selection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
 form button {
     background-color: #4CAF50;
     color: white;
@@ -158,6 +163,7 @@ footer a:hover {
 footer p {
     margin: 5px 0;
 }
+
 
 
 /* tarjetas de servicios */
