@@ -103,26 +103,8 @@ form button:hover {
 /* video styles */
 
 
-iframe {
-    display: flex;
-    justify-content: end;
-    width: 600px;
-    height: 338px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 8px;        
-}
-.padregrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
-    background-color: gray;
-}   
 .quienesomos {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.1em;
     line-height: 1.6;
     text-align: center;
@@ -133,6 +115,13 @@ iframe {
     font-size: 1.5em;
     display: flex;
     justify-content: center;
+    color: rgb(7, 4, 4);
+}
+
+.quienesomos p {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(7, 4, 4);
 }
 /* footer styles */
 footer {
@@ -173,6 +162,7 @@ footer p {
     gap: 20px; /* Espacio entre tarjetas */
     justify-content: center; /* Centra las tarjetas */
     padding: 20px;
+    align-content: center;
 }
 
 .card {
@@ -244,122 +234,77 @@ footer p {
 
 /* HERO FULLSCREEN */
 #carouselExampleCaptions {
+  width: 100vw;
   height: calc(100vh - 56px);
 }
 
 #carouselExampleCaptions .carousel-inner,
 #carouselExampleCaptions .carousel-item {
+  width: 100%;
   height: 100%;
 }
 
-#carouselExampleCaptions img {
+#carouselExampleCaptions .carousel-item img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 
 
 /* Estilos para la cuadrícula padre */
 
+.padregrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 100%;
+  margin: 80px auto;
+  padding: 0 20px;
+  align-items: center;
+  background-color: #ececec;
+  border-radius: 5px;
+   
 
-.gridPadre{
-    width: 800px;
-    height: 500px;
-    background-color: green;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas:
-    "itemuno itemdos itemdos"
-    "itemuno itemtres itemcuatro"
-    "itemuno itemcinco itemseis";
-}
-
-.gridPadre div {
-    border: 1px solid black;
 }
 
-.areauno {
-    grid-area: itemuno;
-}
-.areados {
-    grid-area: itemdos;
-}
-.areatres {
-    grid-area: itemtres;
-}
-.areacuatro {
-    grid-area: itemcuatro;
-}
-.areacinco {
-    grid-area: itemcinco;
-}
-.areaseis {
-    grid-area: itemseis;
+/* Texto */
+.quienesomos h3 {
+  margin-bottom: 15px;
 }
 
-@media screen and (max-width: 700px) {
-  .gridPadre{
-    width: 400px;
-    height: 600px;
-    background-color: green;
-    display: grid;
-    grid-template-rows: repeat(6,1fr);
-    grid-template-areas:
-    "itemuno"
-    "itemdos"
-    "itemtres"
-    "itemcuatro"
-    "itemcinco"
-    "itemseis";
+.quienesomos p {
+  line-height: 1.6;
 }
 
-.gridPadre div {
-    border: 1px solid black;
+/* Video responsive */
+.videocontainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
-.areauno {
-    grid-area: itemuno;
+.videocontainer iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
-.areados {
-    grid-area: itemdos;
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .padregrid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Video arriba */
+  .videocontainer {
+    order: -1;
+  }
 }
-.areatres {
-    grid-area: itemtres;
-}
-.areacuatro {
-    grid-area: itemcuatro;
-}
-.areacinco {
-    grid-area: itemcinco;
-}
-.areaseis {
-    grid-area: itemseis;
-}
-}
+
 
 /* Estilos adicionales */
 .carousel-caption { 
@@ -427,56 +372,49 @@ footer p {
 /* porfolio de clientes */
 
 .clients-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
-}
-
-.clients-section h2 {
-  margin-bottom: 40px;
-  font-family: sans-serif;
-  color: #333;
 }
 
 .clients-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .client-card {
-  
-  padding: 20px;
-  height: 100px;
+  background-color: #fff;
+  padding: 40px;
+  min-height: 180px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: all 0.4s ease; /* Transición suave */
-  cursor: pointer;
+
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .client-card img {
   max-width: 100%;
-  max-height: 50px;
-  filter: grayscale(100%); /* Convierte a blanco y negro */
-  opacity: 0.6;
-  transition: all 0.4s ease;
+  max-height: 120px;
+  object-fit: contain;
+
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: all 0.3s ease;
 }
 
-/* EFECTO HOVER */
+/* Hover elegante */
 .client-card:hover {
-  transform: translateY(-8px); /* Elevación */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  border-color: #25D366; /* Opcional: borde del color de tu marca */
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .client-card:hover img {
-  filter: grayscale(0%); /* Recupera el color original */
+  filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.1); /* Ligero aumento de tamaño */
 }
-
