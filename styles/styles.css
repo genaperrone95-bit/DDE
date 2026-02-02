@@ -233,7 +233,7 @@ footer p {
 }
 
 .whatsapp-btn:hover {
-  background: #128C7E; /* Verde más oscuro al pasar el cursor */
+  background: #000000; /* Verde más oscuro al pasar el cursor */
 }
 
 /* Estilos para el carrusel */
@@ -497,7 +497,7 @@ img.descubrinos {
   width: 100%;
   height: 150px;
   object-fit: cover;   /* recorta */
-  object-position: 50% 47%
+  object-position: 50% 37%
 }
 
 }
