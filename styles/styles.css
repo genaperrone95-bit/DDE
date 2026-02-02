@@ -161,6 +161,46 @@ footer p {
     margin: 5px 0;
 }
 
+@media (max-width: 768px) {
+  footer {
+    padding: 2px 15px;
+    text-align: center;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  footer img {
+    width: 24px;
+    height: 24px;
+  }
+
+  footer p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 2px 10px;
+  }
+
+  footer a {
+    margin: 6px;
+  }
+
+  footer img {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
 
 
 /* tarjetas de servicios */
