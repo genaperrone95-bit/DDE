@@ -1,11 +1,5 @@
 /* styles.css */
 
-div.formato {
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-    justify-items: center;
-}
 
 
 body {
@@ -544,3 +538,11 @@ img.descubrinos {
 }
 
 }
+
+div.formato {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+}
+
