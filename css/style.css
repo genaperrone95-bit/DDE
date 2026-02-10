@@ -110,7 +110,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #000;
+  background: radial-gradient(circle, rgb(6, 128, 8) 7%, rgb(5, 5, 4) 100%);
 }
 
 /* =====================
@@ -238,7 +238,7 @@ form button:hover {
 }
 
 .whatsapp-btn:hover {
-  background: #000;
+  background: radial-gradient(circle, rgb(6, 128, 8) 7%, rgb(5, 5, 4) 100%);
 }
 
 /* =====================
