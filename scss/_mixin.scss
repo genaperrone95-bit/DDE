@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+/* =====================
+   BUTTONS
+===================== */
+
+@mixin button-base($bg, $radius) {
+  background-color: $bg;
+  color: $white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  font-weight: 600;
+  transition: $transition-fast;
+}
+
+@mixin button-hover-gradient {
+  &:hover {
+    background: radial-gradient(
+      circle,
+      rgba(6, 128, 8, 1) 7%,
+      rgba(5, 5, 4, 1) 100%
+    );
+  }
+}
+
+/* =====================
+   CARDS
+===================== */
+
+@mixin card-base {
+  background-color: $white;
+  border: 1px solid $gray-border;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+

@@ -1,112 +1,103 @@
-/* 📱 Mobile */
-@media (max-width: 768px) {
+@use "variables" as *;
+@use "mixins" as *;
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+/* 📱 Tablet & mobile */
+@include tablet {
+
   .padregrid {
     grid-template-columns: 1fr;
   }
 
-  /* Video arriba */
   .videocontainer {
     order: -1;
   }
-}
 
-@media (max-width: 768px) {
   #carouselExampleCaptions {
     height: 70vh;
+
+    .carousel-item img {
+      object-position: center top;
+    }
   }
 
-  #carouselExampleCaptions .carousel-item img {
-    object-position: center top;
+  footer {
+    padding: 2px 15px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      margin: 8px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
   }
 }
 
+/* 💻 Tablet only */
+@include tablet-only {
 
-
-@media (max-width: 992px) and (min-width: 577px) {
   .clients-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  img.descubrinos {
-  margin-top: 30px;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;   /* recorta */
-  object-position: 50% 40%
-}
-  
-
+  .descubrinos {
+    height: 300px;
+    object-position: 50% 40%;
+  }
 }
 
-
-@media (max-width: 576px) {
+/* 📱 Mobile */
+@include mobile {
 
   .clients-section {
     padding: 40px 15px;
   }
 
   .clients-grid {
-    grid-template-columns: 1fr; /* ← una sola columna */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
   .client-card {
     padding: 25px;
     min-height: 120px;
+
+    img {
+      max-height: 80px;
+    }
   }
 
-  .client-card img {
-    max-height: 80px;
+  .descubrinos {
+    height: 150px;
+    object-position: 50% 37%;
   }
 
-  img.descubrinos {
-  margin-top: 30px;
-  width: 100%;
-  height: 150px;
-  object-fit: cover;   /* recorta */
-  object-position: 50% 37%
-}
-
-}
-
-
-@media (max-width: 768px) {
-  footer {
-    padding: 2px 15px;
-    text-align: center;
-  }
-
-  footer a {
-    display: inline-block;
-    margin: 8px;
-  }
-
-  footer img {
-    width: 24px;
-    height: 24px;
-  }
-
-  footer p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-}
-
-@media (max-width: 576px) {
   footer {
     padding: 2px 10px;
-  }
 
-  footer a {
-    margin: 6px;
-  }
+    a {
+      margin: 6px;
+    }
 
-  footer img {
-    width: 20px;
-    height: 20px;
-  }
+    img {
+      width: 20px;
+      height: 20px;
+    }
 
-  footer p {
-    font-size: 12px;
+    p {
+      font-size: 12px;
+    }
   }
 }

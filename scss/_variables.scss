@@ -1,8 +1,80 @@
+/* =====================
+   TYPOGRAPHY
+===================== */
+
 $font-primary: "Roboto", sans-serif;
-$bg-color: black;
+
+$h1-size: 2rem;
+$h2-size: 1.5rem;
+$p-size: 0.9rem;
+
+/* =====================
+   COLORS
+===================== */
+
+$white: #fff;
+$black: #000;
 
 $text-light: #fff;
 $text-dark: #070404;
-$h1-size: 2rem;
-$h2-size: 1.5rem;
-$p-size: .9rem;
+
+$gray-light: #f8f8f8;
+$gray-border: #ddd;
+$gray-dark: #333;
+$gray-text: #666;
+
+$green-primary: #4CAF50;
+$green-whatsapp: #25D366;
+
+$primary-color: #007BFF;
+
+$gold: #ffd700;
+$orange: #ffa500;
+
+$overlay-dark: rgba(0, 0, 0, 0.5);
+
+/* =====================
+   LAYOUT / UI
+===================== */
+
+$bg-color: black;
+$bg-light: #ececec;
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+
+$shadow-card: 0 4px 8px rgba(0,0,0,.1);
+$shadow-soft: 0 6px 20px rgba(0,0,0,.06);
+$shadow-hover: 0 12px 30px rgba(0,0,0,.12);
+
+$transition-fast: 0.3s ease;
+
+/* =====================
+   COMPONENTS
+===================== */
+
+$card-width: 300px;
+
+$form-bg: #f9f9f9;
+$form-border: #ccc;
+
+$footer-text: rgb(7, 4, 4);
+$footer-link: rgb(243, 241, 241);
+$footer-link-hover: rgb(250, 252, 251);
+
+/* =====================
+   HEADER / NAV
+===================== */
+
+$header-height: 65px;
+$nav-bg: #070707;
+$z-navbar: 1000;
+
+/* =====================
+   BREAKPOINTS
+===================== */
+
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;

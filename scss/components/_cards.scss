@@ -1,55 +1,63 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+/* =====================
+   CARDS
+===================== */
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  padding: 20px;
   align-content: center;
+  padding: 20px;
 }
 
 .card {
-  border: 1px solid #ddd;
-  width: 300px;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,.1);
-}
+  @include card-base;
+  width: $card-width;
 
-.card-image-container {
-  height: 300px;
-  width: 100%;
-  display: flex;
-  object-fit: cover;
-}
+  &-image-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
 
-.card-content {
-  padding: 15px;
-  text-align: center;
-}
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-.card-title {
+  &-content {
+    padding: 15px;
+    text-align: center;
+  }
+
+  &-title {
     font-size: 1.2em;
+    color: $gray-dark;
     margin-top: 0;
-    color: #333;
-}
+  }
 
-.card-description {
-    font-size: 0.9em;
-    color: #666;
+  &-description {
+    font-size: .9em;
+    color: $gray-text;
     margin-bottom: 10px;
-}
+  }
 
-.card-price {
+  &-price {
     font-size: 1.1em;
     font-weight: bold;
-    color: #007BFF;
+    color: $primary-color;
     margin-bottom: 15px;
-}
+  }
 
-.card-footer {
+  &-footer {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: $gray-light;
     display: flex;
     justify-content: center;
+  }
 }

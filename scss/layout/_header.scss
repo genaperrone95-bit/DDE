@@ -1,21 +1,18 @@
-
 @use "../variables" as *;
 
+/* =====================
+   HEADER / NAVBAR
+===================== */
+
 .navbar {
-  top: 0;
-  width: 100%;
-  background-color: #070707;
-  z-index: 1000;
-}
-
-
-header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: $z-navbar;
+  background-color: $nav-bg;
 }
 
+/* Compensa la navbar fija */
 main {
-  padding-top: 65px;
+  padding-top: $header-height;
 }
