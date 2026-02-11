@@ -1,7 +1,12 @@
 /* =====================
    VARIABLES
 ===================== */
-@use "variables" as *;
+@use "variables";
+
+/* =====================
+   MIXINS
+===================== */
+@use "mixin";
 
 /* =====================
    BASE
@@ -16,6 +21,7 @@
 @use "layout/grid";
 @use "layout/form";
 @use "layout/footer";
+@use "layout/responsive";
 
 /* =====================
    COMPONENTS
@@ -24,4 +30,3 @@
 @use "components/cards";
 @use "components/carousel";
 @use "components/clients";
-@use "responsive";

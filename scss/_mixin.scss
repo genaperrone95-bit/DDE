@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 /* =====================
-   BUTTONS
+   MIXINS
 ===================== */
 
 @mixin button-base($bg, $radius) {
@@ -25,9 +25,23 @@
   }
 }
 
-/* =====================
-   CARDS
-===================== */
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: $mobile) and (max-width: $desktop) {
+    @content;
+  }
+}
 
 @mixin card-base {
   background-color: $white;
@@ -36,21 +50,3 @@
   box-shadow: $shadow-card;
   overflow: hidden;
 }
-
-/* =====================
-   RESPONSIVE
-===================== */
-
-@mixin mobile {
-  @media (max-width: $mobile) {
-    @content;
-  }
-}
-
-
-@mixin tablet {
-  @media (max-width: $tablet) {
-    @content;
-  }
-}
-
