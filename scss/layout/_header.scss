@@ -1,0 +1,21 @@
+
+@use "../variables" as *;
+
+.navbar {
+  top: 0;
+  width: 100%;
+  background-color: #070707;
+  z-index: 1000;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+main {
+  padding-top: 65px;
+}

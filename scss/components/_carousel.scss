@@ -1,0 +1,82 @@
+
+#carouselExampleCaptions {
+  width: 100vw;
+  height: calc(100vh - 56px);
+
+  .carousel-inner,
+  .carousel-item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 27%;
+}
+
+.carousel-caption { 
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 1em; 
+}   
+.carousel-caption h3 { 
+    margin: 0; 
+    font-size: 1.2em; 
+}
+.carousel-caption p { 
+    margin: 5px 0 0; 
+    font-size: 0.9em; 
+}
+.carousel-caption a { 
+    color: #ffd700; 
+    text-decoration: underline; 
+}
+.carousel-caption a:hover { 
+    color: #ffa500; 
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-item img {
+    display: block;
+}
+.carousel-item img.lazy {
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+.carousel-item img.lazy.loaded {
+    filter: blur(0);
+}
+.carousel-loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+.carousel-item img.lazy.loaded + .carousel-loading-spinner {
+    display: none;
+}
+.carousel-item img.lazy:not(.loaded) + .carousel-loading-spinner {
+    display: block;
+}

@@ -1,0 +1,24 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+/* =====================
+   BUTTONS
+===================== */
+
+.submit-button {
+  text-align: center;
+}
+
+.btn {
+  @include button-base($green-primary, $radius-sm);
+  @include button-hover-gradient;
+}
+
+.whatsapp-btn {
+  @include button-base($green-whatsapp, $radius-md);
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+}

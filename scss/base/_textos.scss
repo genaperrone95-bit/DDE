@@ -1,0 +1,51 @@
+@use "../variables" as *;
+
+/* =====================
+   HEADINGS
+===================== */
+
+h1,
+h2 {
+  color: $text-light;
+  text-align: center;
+}
+
+h1 {
+  font-size: $h1-size;
+  margin: 20px;
+}
+
+h2 {
+  font-size: $h2-size;
+  padding: 20px;
+  margin: 0;
+}
+
+/* =====================
+   TEXT
+===================== */
+
+p {
+  color: $text-light;
+  font-size: $p-size;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* =====================
+   QUIÉNES SOMOS (texto)
+===================== */
+
+.quienesomos {
+  text-align: center;
+
+  h2 {
+    color: $text-dark;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: $text-dark;
+    margin-bottom: 10px;
+  }
+}
