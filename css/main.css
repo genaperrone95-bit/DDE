@@ -104,6 +104,30 @@ p {
 }
 
 /* =====================
+   inicio(texto)
+===================== */
+.containerresultados h3 {
+  color: #070404;
+  margin-bottom: 15px;
+}
+.containerresultados p {
+  color: #070404;
+  font-size: 0.9rem;
+  margin: 10px;
+}
+
+.row p {
+  color: #070404;
+  font-size: 0.9rem;
+  margin: 10px;
+}
+
+h2.mb-5 {
+  color: #070404;
+  margin-bottom: 15px;
+}
+
+/* =====================
    LAYOUT
 ===================== */
 /* =====================
@@ -424,6 +448,19 @@ footer p {
   background-color: #f8f8f8;
   display: flex;
   justify-content: center;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.hero-section .carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
 }
 
 /* =====================

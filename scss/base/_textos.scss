@@ -51,3 +51,33 @@ p {
     margin-bottom: 10px;
   }
 }
+
+/* =====================
+   inicio(texto)
+===================== */
+.containerresultados {
+
+  h3 {
+    color: $text-dark;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: $text-dark;
+    font-size: $p-size;
+    margin: 10px;
+  }
+}
+
+.row {
+  p {
+    color: $text-dark;
+    font-size: $p-size;
+    margin: 10px;
+  }
+}
+
+h2.mb-5 {
+  color: $text-dark;
+  margin-bottom: 15px;
+}
