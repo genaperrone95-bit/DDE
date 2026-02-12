@@ -86,10 +86,21 @@
   border-radius: $radius-lg;
   box-shadow: $shadow-soft;
   transition: transform .3s ease, box-shadow .3s ease;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     transform: translateY(-6px);
     box-shadow: $shadow-hover;
+  }
+
+  .card-body {
+    flex-grow: 1; // 🔥 hace que todas ocupen el mismo alto
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .card-title {
@@ -100,6 +111,11 @@
     font-size: .9rem;
   }
 }
+
+.team-card p:last-child {
+  margin-bottom: 0;
+}
+
 .team-img {
   width: 120px;
   height: 120px;
@@ -107,6 +123,7 @@
   border-radius: 50%;
   border: 3px solid $white;
   box-shadow: $shadow-soft;
+  position: static;
 }
 
 .team-modal {
@@ -120,4 +137,5 @@
     border-radius: $radius-md;
   }
 }
+
 

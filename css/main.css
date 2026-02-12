@@ -101,7 +101,7 @@ p {
   max-width: 480px;
 }
 .quienesomos h2 {
-  color: #070404;
+  color: #fff;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -181,8 +181,9 @@ main {
    GRID + VIDEO
 ===================== */
 .acerca-de {
+  background: radial-gradient(circle, rgb(15, 141, 17) 0.1%, rgb(0, 0, 0) 28%);
   color: white;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 .acerca-de .acerca-wrapper {
   display: grid;
@@ -201,12 +202,11 @@ main {
   margin-bottom: 30px;
 }
 .acerca-de .acerca-texto h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 .acerca-de .acerca-texto p {
-  font-size: 1rem;
   line-height: 1.7;
   opacity: 0.85;
 }
@@ -291,7 +291,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: rgb(250, 252, 251);
+  color: rgb(12, 145, 63);
   text-decoration: underline;
 }
 footer p {
@@ -519,16 +519,29 @@ footer p {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .team-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.team-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .team-card .card-title {
   font-weight: 600;
 }
 .team-card .card-text {
   font-size: 0.9rem;
+}
+
+.team-card p:last-child {
+  margin-bottom: 0;
 }
 
 .team-img {
@@ -538,6 +551,7 @@ footer p {
   border-radius: 50%;
   border: 3px solid #fff;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  position: static;
 }
 
 .team-modal {
