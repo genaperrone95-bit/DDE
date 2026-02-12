@@ -125,3 +125,22 @@ h2.mb-5 {
     color: $text-dark;
   }
 }
+
+/* =====================
+   CONTACTO (texto) 
+===================== */
+
+.contact-hero {
+ 
+  h1 {
+    color: $text-dark;
+  }
+
+  p {
+    color: #000 !important;
+  }
+}
+
+.contact-benefits {
+  padding: 50px 20px 10px;
+}
