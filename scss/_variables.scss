@@ -24,13 +24,13 @@ $gray-border: #ddd;
 $gray-dark: #333;
 $gray-text: #666;
 
-$green-primary: #4CAF50;
+$green-primary: #a9ea2b;
 $green-whatsapp: #25D366;
 
-$primary-color: #007BFF;
+$primary-color: #0f32a6;
 
-$gold: #ffd700;
-$orange: #ffa500;
+$gold: #eb4bd2;
+$orange: #a9ea2b;
 
 $overlay-dark: rgba(0, 0, 0, 0.5);
 
@@ -38,8 +38,8 @@ $overlay-dark: rgba(0, 0, 0, 0.5);
    LAYOUT / UI
 ===================== */
 
-$bg-color: black;
-$bg-light: #ececec;
+$bg-color: #0f32a6;
+$bg-light: #2ecc71;
 
 $radius-sm: 4px;
 $radius-md: 8px;
@@ -49,7 +49,7 @@ $shadow-card: 0 4px 8px rgba(0,0,0,.1);
 $shadow-soft: 0 6px 20px rgba(0,0,0,.06);
 $shadow-hover: 0 12px 30px rgba(0,0,0,.12);
 
-$transition-fast: 0.3s ease;
+$transition-fast: all 0.3s ease;
 
 /* =====================
    COMPONENTS
@@ -62,7 +62,7 @@ $form-border: #ccc;
 
 $footer-text: rgb(7, 4, 4);
 $footer-link: rgb(243, 241, 241);
-$footer-link-hover: rgb(12, 145, 63);
+$footer-link-hover: #a9ea2b;
 
 /* =====================
    HEADER / NAV

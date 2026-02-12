@@ -29,6 +29,18 @@
 /* =====================
    MIXINS
 ===================== */
+/* ---------------------
+   BUTTON BASE
+--------------------- */
+/* ---------------------
+   BUTTON HOVER (Brand)
+--------------------- */
+/* ---------------------
+   RESPONSIVE
+--------------------- */
+/* ---------------------
+   CARD BASE
+--------------------- */
 /* =====================
    BASE
 ===================== */
@@ -48,8 +60,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: black;
+  background-color: #0f32a6;
   min-height: 100vh;
+  transition: all 0.3s ease;
 }
 
 /* =====================
@@ -204,6 +217,23 @@ main {
   padding-top: 65px;
 }
 
+.resultados {
+  background-color: #a9ea2b;
+}
+
+.proceso {
+  background-color: #eb4bd2;
+}
+
+.servicios-hero {
+  background-color: #a9ea2b;
+}
+
+.servicios-contenido {
+  background-color: #eb4bd2;
+  color: #070404;
+}
+
 /* =====================
    VARIABLES
 ===================== */
@@ -214,8 +244,8 @@ main {
    GRID + VIDEO
 ===================== */
 .acerca-de {
-  background: radial-gradient(circle, rgb(15, 141, 17) 0.1%, rgb(0, 0, 0) 28%);
-  color: white;
+  background: #a9ea2b;
+  color: #070404;
   padding: 100px 0;
 }
 .acerca-de .acerca-wrapper {
@@ -225,21 +255,25 @@ main {
   align-items: center;
 }
 .acerca-de .acerca-texto h1 {
+  color: #070404;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 .acerca-de .acerca-texto .lead {
+  color: #070404;
   font-size: 1.1rem;
   opacity: 0.8;
   margin-bottom: 30px;
 }
 .acerca-de .acerca-texto h2 {
+  color: #070404;
   font-size: 1.5rem;
   margin-bottom: 20px;
   font-weight: 600;
 }
 .acerca-de .acerca-texto p {
+  color: #070404;
   line-height: 1.7;
   opacity: 0.85;
 }
@@ -271,13 +305,14 @@ main {
    CONTACT PAGE
 ===================== */
 .contact-page {
-  background-color: #000;
+  background-color: #0f32a6;
   min-height: 100vh;
   padding-bottom: 60px;
 }
 
 /* HERO */
 .contact-hero {
+  background-color: #a9ea2b;
   padding: 40px 20px 40px;
 }
 .contact-hero h1 {
@@ -357,7 +392,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: rgb(12, 145, 63);
+  color: #a9ea2b;
   text-decoration: underline;
 }
 footer p {
@@ -467,24 +502,52 @@ footer p {
 /* =====================
    BUTTONS
 ===================== */
-.submit-button {
+/* Contenedor submit */
+.submit-container {
   text-align: center;
+  margin-top: 20px;
 }
 
+/* ---------------------
+   BOTÓN BASE (override Bootstrap)
+--------------------- */
 .btn {
-  background-color: #4CAF50;
+  background-color: #a9ea2b;
   color: #fff;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 .btn:hover {
-  background: radial-gradient(circle, rgb(6, 128, 8) 7%, rgb(5, 5, 4) 100%);
+  background: linear-gradient(135deg, #0f32a6, #a9ea2b);
+  color: #fff;
 }
 
+/* ---------------------
+   BOTÓN SUBMIT
+--------------------- */
+.btn-submit {
+  background-color: #a9ea2b;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 12px 35px;
+}
+.btn-submit:hover {
+  background: linear-gradient(135deg, #0f32a6, #a9ea2b);
+  color: #fff;
+}
+
+/* ---------------------
+   BOTÓN WHATSAPP
+--------------------- */
 .whatsapp-btn {
   background-color: #25D366;
   color: #fff;
@@ -493,31 +556,16 @@ footer p {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   width: 100%;
   padding: 12px;
   text-align: center;
   text-decoration: none;
 }
-
-/* BUTTON */
-.submit-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.btn-submit {
-  background: #4CAF50;
+.whatsapp-btn:hover {
+  background-color: rgb(30.9129032258, 176.2870967742, 85.2193548387);
   color: #fff;
-  border: none;
-  padding: 12px 35px;
-  border-radius: 30px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-.btn-submit:hover {
-  background: radial-gradient(circle, rgb(6, 128, 8) 7%, rgb(5, 5, 4) 100%);
 }
 
 /* =====================
@@ -564,7 +612,7 @@ footer p {
 .card-price {
   font-size: 1.1em;
   font-weight: bold;
-  color: #007BFF;
+  color: #0f32a6;
   margin-bottom: 15px;
 }
 .card-footer {
@@ -671,7 +719,7 @@ footer p {
 }
 .carousel-item img.lazy {
   filter: blur(5px);
-  transition: filter 0.3s ease;
+  transition: filter all 0.3s ease;
 }
 .carousel-item img.lazy.loaded {
   filter: blur(0);
@@ -707,11 +755,11 @@ footer p {
   font-size: 0.9em;
 }
 .carousel-caption a {
-  color: #ffd700;
+  color: #eb4bd2;
   text-decoration: underline;
 }
 .carousel-caption a:hover {
-  color: #ffa500;
+  color: #a9ea2b;
 }
 
 /* =====================
@@ -750,6 +798,16 @@ footer p {
 /* =====================
    CLIENTS
 ===================== */
+.porfoliouno {
+  background: #a9ea2b;
+  padding: 80px 20px;
+}
+.porfoliouno h1,
+.porfoliouno p {
+  color: #070404;
+  text-align: center;
+}
+
 .clients-section {
   padding: 80px 20px;
 }
@@ -768,7 +826,7 @@ footer p {
   min-height: 180px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform all 0.3s ease, box-shadow all 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -779,7 +837,7 @@ footer p {
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.75;
-  transition: all 0.3s ease;
+  transition: all all 0.3s ease;
 }
 .client-card:hover {
   transform: translateY(-6px);

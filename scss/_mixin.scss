@@ -4,6 +4,10 @@
    MIXINS
 ===================== */
 
+/* ---------------------
+   BUTTON BASE
+--------------------- */
+
 @mixin button-base($bg, $radius) {
   background-color: $bg;
   color: $white;
@@ -15,15 +19,24 @@
   transition: $transition-fast;
 }
 
+/* ---------------------
+   BUTTON HOVER (Brand)
+--------------------- */
+
 @mixin button-hover-gradient {
   &:hover {
-    background: radial-gradient(
-      circle,
-      rgba(6, 128, 8, 1) 7%,
-      rgba(5, 5, 4, 1) 100%
+    background: linear-gradient(
+      135deg,
+      $primary-color,
+      $green-primary
     );
+    color: $white;
   }
 }
+
+/* ---------------------
+   RESPONSIVE
+--------------------- */
 
 @mixin mobile {
   @media (max-width: $mobile) {
@@ -42,6 +55,10 @@
     @content;
   }
 }
+
+/* ---------------------
+   CARD BASE
+--------------------- */
 
 @mixin card-base {
   background-color: $white;

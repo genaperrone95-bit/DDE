@@ -4,7 +4,15 @@
 /* =====================
    CLIENTS
 ===================== */
-
+.porfoliouno {
+  background: $green-primary;
+  padding: 80px 20px;
+  h1,
+  p {
+    color: $text-dark;
+    text-align: center;
+  }
+}
 .clients-section {
   padding: 80px 20px;
 }

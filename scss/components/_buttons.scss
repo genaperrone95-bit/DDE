@@ -5,14 +5,36 @@
    BUTTONS
 ===================== */
 
-.submit-button {
+/* Contenedor submit */
+
+.submit-container {
   text-align: center;
+  margin-top: 20px;
 }
+
+/* ---------------------
+   BOTÓN BASE (override Bootstrap)
+--------------------- */
 
 .btn {
   @include button-base($green-primary, $radius-sm);
   @include button-hover-gradient;
 }
+
+/* ---------------------
+   BOTÓN SUBMIT
+--------------------- */
+
+.btn-submit {
+  @include button-base($green-primary, 30px);
+  padding: 12px 35px;
+  @include button-hover-gradient;
+  
+}
+
+/* ---------------------
+   BOTÓN WHATSAPP
+--------------------- */
 
 .whatsapp-btn {
   @include button-base($green-whatsapp, $radius-md);
@@ -21,25 +43,9 @@
   padding: 12px;
   text-align: center;
   text-decoration: none;
-}
 
-
-/* BUTTON */
-
-.submit-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-
-.btn-submit {
-  background: $green-primary;
-  color: #fff;
-  border: none;
-  padding: 12px 35px;
-  border-radius: 30px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  @include button-hover-gradient;
- 
+  &:hover {
+    background-color: darken($green-whatsapp, 8%);
+    color: $white;
+  }
 }
