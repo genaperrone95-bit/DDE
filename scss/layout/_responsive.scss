@@ -8,13 +8,22 @@
 /* 📱 Tablet & abajo */
 @include tablet {
 
-  .padregrid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 992px) {
+  .acerca-de {
+    padding: 70px 0;
 
-  .videocontainer {
-    order: -1;
+    .acerca-wrapper {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .acerca-video iframe {
+      height: 280px;
+    }
   }
+}
+
 
   #carouselExampleCaptions {
     height: 70vh;
