@@ -23,6 +23,12 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: $h3-size;
+  text-align: center;
+  margin: 20px;
+}
+
 /* =====================
    TEXT
 ===================== */
@@ -39,15 +45,30 @@ p {
 ===================== */
 
 .quienesomos {
-  text-align: center;
-
   h2 {
     color: $text-dark;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $gray-text;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+}
+
+
+.masdenosotras {
+  text-align: center;
+
+  h3 {
+    color: $text-light;
     margin-bottom: 15px;
   }
 
   p {
-    color: $text-dark;
+    color: $text-light;
     margin-bottom: 10px;
   }
 }

@@ -77,3 +77,46 @@
   padding: 30px;
   border-radius: 10px;
 }
+
+/* =====================
+   nosotras
+===================== */
+.team-card {
+  border: none;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-soft;
+  transition: transform .3s ease, box-shadow .3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-hover;
+  }
+
+  .card-title {
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: .9rem;
+  }
+}
+.team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid $white;
+  box-shadow: $shadow-soft;
+}
+
+.team-modal {
+  max-width: 620px;
+
+  .modal-content {
+    background-color: $white;
+  }
+
+  img {
+    border-radius: $radius-md;
+  }
+}
