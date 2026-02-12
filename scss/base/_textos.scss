@@ -103,3 +103,25 @@ h2.mb-5 {
   color: $text-dark;
   margin-bottom: 15px;
 }
+
+/* =====================
+   SERVICIOS (texto)
+===================== */
+
+.servicios-contenido {
+  color: $text-dark;
+
+  h2,
+  p {
+    color: $text-dark;
+  }
+}
+
+.servicios-hero {
+  color: $text-dark;
+
+  h1,
+  p {
+    color: $text-dark;
+  }
+}

@@ -147,6 +147,25 @@ h2.mb-5 {
 }
 
 /* =====================
+   SERVICIOS (texto)
+===================== */
+.servicios-contenido {
+  color: #070404;
+}
+.servicios-contenido h2,
+.servicios-contenido p {
+  color: #070404;
+}
+
+.servicios-hero {
+  color: #070404;
+}
+.servicios-hero h1,
+.servicios-hero p {
+  color: #070404;
+}
+
+/* =====================
    LAYOUT
 ===================== */
 /* =====================
@@ -444,22 +463,13 @@ footer p {
 /* =====================
    CARDS
 ===================== */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-content: center;
-  padding: 20px;
-}
-
 .card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
+  width: 100%;
 }
 .card-image-container {
   width: 100%;
