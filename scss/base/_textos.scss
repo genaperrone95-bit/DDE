@@ -92,16 +92,44 @@ p {
 }
 
 .row {
+
   p {
     color: $text-dark;
     font-size: $p-size;
+    
+  }
+  
+  .lightp {
+    color: $text-light;
+    font-size: $p-size;
     margin: 10px;
   }
+
+  h3 {
+    color: $text-dark;
+    margin-bottom: 15px;
+  } 
+  
+  
+  h4 {
+    color: $text-dark;
+    margin-bottom: 15px;
+  }
+ 
+
+
+  h5 {
+    color: $text-light;
+    margin-bottom: 15px;
+  }
+
 }
 
 h2.mb-5 {
-  color: $text-dark;
+  color: $text-light;
   margin-bottom: 15px;
+
+
 }
 
 /* =====================
@@ -111,8 +139,8 @@ h2.mb-5 {
 .servicios-contenido {
   color: $text-dark;
 
-  h2,
-  p {
+
+  .darkp {
     color: $text-dark;
   }
 }

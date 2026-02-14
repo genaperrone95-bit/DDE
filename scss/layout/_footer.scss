@@ -1,33 +1,40 @@
 @use "../variables" as *;
 @use "../mixin" as *;
+
 /* =====================
    FOOTER
 ===================== */
 
 footer {
   width: 100%;
-  position: static;
-  bottom: 0;
   text-align: center;
-  color: $footer-text;
+
+  background-color: $primary-color;
+  color: $white;
+
+  padding: 60px 0;
+
+
+  
+
+  p {
+    margin: 8px 0;
+  }
 
   img {
     width: 20px;
     height: 20px;
+    vertical-align: middle;
   }
 
   a {
-    color: $footer-link;
-    margin: 0 10px;
+    color: $white;
+    margin: 0 12px;
     text-decoration: none;
+    transition: $transition-fast;
 
     &:hover {
-      color: $footer-link-hover;
-      text-decoration: underline;
+      color: $green-primary;
     }
-  }
-
-  p {
-    margin: 5px 0;
   }
 }

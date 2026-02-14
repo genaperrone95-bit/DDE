@@ -1,16 +1,57 @@
 @use "../variables" as *;
-@use "../mixin" as *;
+
 /* =====================
    HEADER / NAVBAR
 ===================== */
 
-.navbar {
+.custom-navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: $z-navbar;
-  background-color: $nav-bg;
+  padding: 18px 0;
+
+  background: transparent;
+  transition: all 0.3s ease;
+
+  .navbar-brand {
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+  }
+
+  .nav-link {
+    color: $white;
+    font-weight: 500;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $green-primary;
+    }
+
+    &.active {
+      color: $green-primary;
+      font-weight: 600;
+    }
+  }
+
+  /* Estado cuando scrolleás */
+  &.scrolled {
+    background-color: $white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 12px 0;
+
+    .navbar-brand {
+      color: $primary-color;
+    }
+
+    .nav-link {
+      color: $text-dark;
+    }
+  }
 }
+
 
 /* Compensa la navbar fija */
 main {
