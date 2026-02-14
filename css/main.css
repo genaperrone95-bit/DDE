@@ -108,6 +108,14 @@ p {
 }
 
 /* =====================
+   tarjeta instagram
+===================== */
+.instagram-card h2,
+.instagram-card p {
+  color: #222;
+}
+
+/* =====================
    QUIÉNES SOMOS (texto)
 ===================== */
 .quienesomos {
@@ -807,6 +815,30 @@ footer a:hover {
 }
 .team-modal img {
   border-radius: 8px;
+}
+
+/*=====================
+   instagram card
+=====================*/
+.mini-instagram {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  color: white;
+}
+
+.instagram-card {
+  background: white;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
 }
 
 /* =====================
