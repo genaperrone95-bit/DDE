@@ -661,10 +661,12 @@ footer a:hover {
   font-weight: 600;
   transition: all 0.3s ease;
   padding: 12px 35px;
+  color: #0f5132;
 }
 .btn-submit:hover {
-  background: linear-gradient(135deg, #0f32a6, #a9ea2b);
+  background-color: #093f26;
   color: #fff;
+  transform: translateY(-3px);
 }
 
 /* ---------------------
@@ -688,6 +690,20 @@ footer a:hover {
 .whatsapp-btn:hover {
   background-color: rgb(30.9129032258, 176.2870967742, 85.2193548387);
   color: green;
+}
+
+.btn-dde {
+  background-color: #a9ea2b;
+  color: #093f26;
+  border: 2px solid #093f26;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-dde:hover {
+  background-color: #093f26;
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 /* =====================
