@@ -98,52 +98,6 @@ h3 {
 }
 
 /* =====================
-   TEXT
-===================== */
-p {
-  color: #fff;
-  font-size: 0.9rem;
-  margin: 10px 0;
-  text-align: center;
-}
-
-/* =====================
-   tarjeta instagram
-===================== */
-.instagram-card h2,
-.instagram-card p {
-  color: #222;
-}
-
-/* =====================
-   QUIÉNES SOMOS (texto)
-===================== */
-.quienesomos {
-  max-width: 480px;
-}
-.quienesomos h2 {
-  color: #fff;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-.quienesomos p {
-  line-height: 1.7;
-  color: #555;
-}
-
-.masdenosotras {
-  text-align: center;
-}
-.masdenosotras h3 {
-  color: #fff;
-  margin-bottom: 15px;
-}
-.masdenosotras p {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-/* =====================
    inicio(texto)
 ===================== */
 .containerresultados h3 {
@@ -184,6 +138,59 @@ h2.mb-5 {
 }
 
 /* =====================
+   TEXT
+===================== */
+p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* =====================
+   tarjeta instagram
+===================== */
+.instagram-card h2,
+.instagram-card p {
+  color: #222;
+}
+
+/* =====================
+   QUIÉNES SOMOS (texto)
+===================== */
+.acerca-de {
+  color: rgb(0, 0, 0);
+  padding: 100px 0;
+}
+.acerca-de h1, .acerca-de h2 {
+  color: #000;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.acerca-de .lead {
+  opacity: 0.9;
+  margin-top: 20px;
+}
+.acerca-de p {
+  color: #000;
+  font-size: 23px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.masdenosotras {
+  text-align: center;
+}
+.masdenosotras h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.masdenosotras p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* =====================
    SERVICIOS (texto)
 ===================== */
 .servicios-contenido {
@@ -194,6 +201,7 @@ h2.mb-5 {
 }
 
 .servicios-hero {
+  padding: 50px 20px;
   color: #070404;
 }
 .servicios-hero h1,
@@ -251,9 +259,6 @@ h2.mb-5 {
   color: #a9ea2b;
   font-weight: 600;
 }
-.custom-navbar {
-  /* Estado cuando scrolleás */
-}
 .custom-navbar.scrolled {
   background-color: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -266,7 +271,6 @@ h2.mb-5 {
   color: #070404;
 }
 
-/* Compensa la navbar fija */
 main {
   padding-top: 65px;
 }
@@ -299,7 +303,6 @@ main {
 ===================== */
 .acerca-de {
   background: #a9ea2b;
-  color: #070404;
   padding: 100px 0;
 }
 .acerca-de .acerca-wrapper {
@@ -308,34 +311,11 @@ main {
   gap: 60px;
   align-items: center;
 }
-.acerca-de .acerca-texto h1 {
-  color: #070404;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.acerca-de .acerca-texto .lead {
-  color: #070404;
-  font-size: 1.1rem;
-  opacity: 0.8;
-  margin-bottom: 30px;
-}
-.acerca-de .acerca-texto h2 {
-  color: #070404;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-.acerca-de .acerca-texto p {
-  color: #070404;
-  line-height: 1.7;
-  opacity: 0.85;
-}
 .acerca-de .acerca-video iframe {
   width: 100%;
   height: 350px;
-  border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
 
 .col-md-4 {
@@ -344,6 +324,12 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.equipo {
+  background: #d429bb;
+  padding: 20px 0;
+  text-align: center;
 }
 
 /* =====================
@@ -1049,13 +1035,29 @@ footer a:hover {
   text-align: center;
   margin-top: 40px;
 }
-
-.descubrinos {
+.descriptionbelow .descubrinos {
   margin-top: 30px;
   width: 100%;
-  height: 370px;
+  height: 400px;
   object-fit: cover;
-  object-position: 50% 35%;
+  object-position: 30% 35%;
+}
+.descriptionbelow a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.descriptionbelow .ver-mas {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background-color: #d429bb;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all all 0.3s ease;
+}
+.descriptionbelow a:hover .ver-mas {
+  transform: translateY(-2px);
 }
 
 /*# sourceMappingURL=main.css.map */
