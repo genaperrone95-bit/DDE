@@ -10,6 +10,7 @@
 .card {
   @include card-base;
   width: $card-width;
+  background-color: $gold;
 
   &-image-container {
     width: 100%;
@@ -40,16 +41,10 @@
     margin-bottom: 10px;
   }
 
-  &-price {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: $primary-color;
-    margin-bottom: 15px;
-  }
 
   &-footer {
     width: 100%;
-    background-color: $gray-light;
+    background-color: $gold;
     display: flex;
     justify-content: center;
   }

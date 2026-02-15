@@ -715,6 +715,7 @@ footer a:hover {
 }
 .card {
   width: 100%;
+  background-color: #d429bb;
 }
 .card-image-container {
   width: 100%;
@@ -740,15 +741,9 @@ footer a:hover {
   color: #666;
   margin-bottom: 10px;
 }
-.card-price {
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #0f32a6;
-  margin-bottom: 15px;
-}
 .card-footer {
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: #d429bb;
   display: flex;
   justify-content: center;
 }
