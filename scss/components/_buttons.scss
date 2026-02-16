@@ -1,5 +1,6 @@
 @use "../variables" as *;
 @use "../mixin" as *;
+@use "../base/placeholders" as *;
 
 /* =====================
    BUTTONS
@@ -17,6 +18,7 @@
 --------------------- */
 
 .btn {
+  @extend %btn-base;
   @include button-base($green-primary, $radius-sm);
   @include button-hover-gradient;
 }
@@ -26,6 +28,7 @@
 --------------------- */
 
 .btn-submit {
+  @extend %btn-base;
   @include button-base($green-primary, 30px);
   padding: 12px 35px;
   color: #0f5132;
@@ -42,12 +45,11 @@
 --------------------- */
 
 .whatsapp-btn {
+  @extend %btn-base;
   @include button-base($green-whatsapp, $radius-md);
   display: block;
   width: 100%;
   padding: 12px;
-  text-align: center;
-  text-decoration: none;
 
   &:hover {
     background-color: darken($green-whatsapp, 8%);
@@ -55,15 +57,16 @@
   }
 }
 
+/* ---------------------
+   BOTÓN DDE
+--------------------- */
 
 .btn-dde {
+  @extend %btn-base;
   background-color: $green-primary;
   color: #093f26;
   border: 2px solid #093f26;
   border-radius: 30px;
-  font-weight: 600;
-
-  transition: all .3s ease;
 
   &:hover {
     background-color: #093f26;
@@ -71,4 +74,5 @@
     transform: translateY(-3px);
   }
 }
+
 

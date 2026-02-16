@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+/* =========================
+   PLACEHOLDERS
+========================= */
+
+%section-base {
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   BUTTON BASE PLACEHOLDER
+========================= */
+
+%btn-base {
+  font-weight: 600;
+  transition: all .3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
