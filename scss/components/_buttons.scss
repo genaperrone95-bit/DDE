@@ -61,18 +61,33 @@
    BOTÓN DDE
 --------------------- */
 
-.btn-dde {
+.btn.btn-dde {
   @extend %btn-base;
-  background-color: $green-primary;
-  color: #093f26;
-  border: 2px solid #093f26;
-  border-radius: 30px;
+
+  background-color: black !important;
+  border: 2px solid #9eff00 !important;
+  color: #9eff00 !important;
+  border-radius: 50px !important;
+  padding: 12px 30px;
+  overflow: hidden;
 
   &:hover {
-    background-color: #093f26;
-    color: $white;
-    transform: translateY(-3px);
+    background-color: #9eff00 !important;
+    color: black !important;
   }
 }
 
 
+
+/* ---------------------
+   BADGE DESTACADO
+--------------------- */
+
+.badge.bg-dark {
+  background: black !important;
+  border: 2px solid #9eff00;
+  color: #9eff00;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-weight: 500;
+}

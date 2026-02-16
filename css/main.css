@@ -260,13 +260,18 @@ p {
 /* =========================
    BUTTON BASE PLACEHOLDER
 ========================= */
-.btn, .btn-submit, .whatsapp-btn, .btn-dde {
+.btn, .btn-submit, .whatsapp-btn, .btn.btn-dde {
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  outline: none;
+  will-change: transform;
+}
+.btn:focus, .btn-submit:focus, .whatsapp-btn:focus, .btn:active, .btn-submit:active, .whatsapp-btn:active {
+  box-shadow: none;
 }
 
 /* =====================
@@ -509,10 +514,9 @@ footer a:hover {
 .serviciosdde p {
   color: #bfbfbf;
 }
-.serviciosdde {
-  /* Cards */
-}
-.serviciosdde .card {
+
+/* Cards */
+.card {
   background: linear-gradient(180deg, #d94ecb, #c837b9);
   border-radius: 30px;
   border: none;
@@ -520,57 +524,33 @@ footer a:hover {
   transition: all 0.3s ease;
   padding-top: 20px;
 }
-.serviciosdde .card:hover {
+.card:hover {
   transform: translateY(-12px);
   box-shadow: 0 25px 60px rgba(216, 0, 255, 0.3);
 }
-.serviciosdde .card-body {
+
+.card-body {
   padding: 40px 30px;
 }
-.serviciosdde .card-title {
+
+.card-title {
   font-size: 1.8rem;
   font-weight: 700;
 }
-.serviciosdde .text-muted {
+
+.text-muted {
   color: rgba(255, 255, 255, 0.8) !important;
 }
-.serviciosdde ul li {
+
+ul li {
   margin-bottom: 12px;
   font-size: 1rem;
 }
-.serviciosdde {
-  /* Footer */
-}
-.serviciosdde .card-footer {
+
+/* Footer */
+.card-footer {
   background: transparent !important;
   padding-bottom: 40px;
-}
-.serviciosdde {
-  /* Botón */
-}
-.serviciosdde .btn-dde {
-  background-color: black;
-  border: 2px solid #9eff00;
-  color: #9eff00;
-  font-weight: 600;
-  border-radius: 50px;
-  padding: 12px 30px;
-  transition: all 0.3s ease;
-}
-.serviciosdde .btn-dde:hover {
-  background-color: #9eff00;
-  color: black;
-}
-.serviciosdde {
-  /* Badge destacado */
-}
-.serviciosdde .badge.bg-dark {
-  background: black !important;
-  border: 2px solid #9eff00;
-  color: #9eff00;
-  padding: 6px 18px;
-  border-radius: 50px;
-  font-weight: 500;
 }
 
 /* =========================
@@ -861,16 +841,29 @@ footer a:hover {
 /* ---------------------
    BOTÓN DDE
 --------------------- */
-.btn-dde {
-  background-color: #a9ea2b;
-  color: #093f26;
-  border: 2px solid #093f26;
-  border-radius: 30px;
+.btn.btn-dde {
+  background-color: black !important;
+  border: 2px solid #9eff00 !important;
+  color: #9eff00 !important;
+  border-radius: 50px !important;
+  padding: 12px 30px;
+  overflow: hidden;
 }
-.btn-dde:hover {
-  background-color: #093f26;
-  color: #fff;
-  transform: translateY(-3px);
+.btn.btn-dde:hover {
+  background-color: #9eff00 !important;
+  color: black !important;
+}
+
+/* ---------------------
+   BADGE DESTACADO
+--------------------- */
+.badge.bg-dark {
+  background: black !important;
+  border: 2px solid #9eff00;
+  color: #9eff00;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-weight: 500;
 }
 
 /* =====================

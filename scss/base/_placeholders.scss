@@ -22,4 +22,11 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  outline: none;
+  will-change: transform;
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
 }
