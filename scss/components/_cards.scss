@@ -3,72 +3,10 @@
 
 
 /* =====================
-   CARDS
-===================== */
-
-
-.card {
-  @include card-base;
-  width: $card-width;
-  background-color: $gold;
-
-  &-image-container {
-    width: 100%;
-    height: 300px;
-    display: flex;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &-content {
-    padding: 15px;
-    text-align: center;
-  }
-
-  &-title {
-    font-size: 1.2em;
-    color: $gray-dark;
-    margin-top: 0;
-  }
-
-  &-description {
-    font-size: .9em;
-    color: $gray-text;
-    margin-bottom: 10px;
-  }
-
-
-  &-footer {
-    width: 100%;
-    background-color: $gold;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.service-card {
-  transition: all 0.3s ease;
-
-  &:hover {
-    transform: translateY(-10px);
-  }
-}
-
-
-.hero-section .carousel-caption {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 10px;
-}
-
-/* =====================
    nosotras
 ===================== */
 .team-card {
+  background-color: $white;
   border: none;
   border-radius: $radius-lg;
   box-shadow: $shadow-soft;
@@ -84,7 +22,7 @@
   }
 
   .card-body {
-    flex-grow: 1; // 🔥 hace que todas ocupen el mismo alto
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,3 +88,41 @@
     font-weight: 600;
 }
 
+
+/* =====================
+   FRASE CARD (Home)
+===================== */
+
+.frase-card {
+  background: $white;
+  border-radius: 30px;
+  padding: 40px 30px;
+  transition: all .3s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-10px);
+    
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .brand-tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px 16px;
+    background-color: black;
+    color: #9eff00;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: .8rem;
+  }
+}

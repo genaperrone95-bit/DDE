@@ -363,7 +363,6 @@ main {
 }
 
 .equipo {
-  background: #d429bb;
   padding: 20px 0;
   text-align: center;
 }
@@ -730,72 +729,10 @@ footer a:hover {
    ABSTRACTS
 ===================== */
 /* =====================
-   CARDS
-===================== */
-.card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-.card {
-  width: 100%;
-  background-color: #d429bb;
-}
-.card-image-container {
-  width: 100%;
-  height: 300px;
-  display: flex;
-}
-.card-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card-content {
-  padding: 15px;
-  text-align: center;
-}
-.card-title {
-  font-size: 1.2em;
-  color: #333;
-  margin-top: 0;
-}
-.card-description {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 10px;
-}
-.card-footer {
-  width: 100%;
-  background-color: #d429bb;
-  display: flex;
-  justify-content: center;
-}
-
-.service-card {
-  transition: all 0.3s ease;
-}
-.service-card:hover {
-  transform: translateY(-10px);
-}
-
-.hero-section .carousel-caption {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 10px;
-}
-
-/* =====================
    nosotras
 ===================== */
 .team-card {
+  background-color: #fff;
   border: none;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
@@ -867,6 +804,38 @@ footer a:hover {
   padding: 10px 25px;
   border-radius: 30px;
   font-weight: 600;
+}
+
+/* =====================
+   FRASE CARD (Home)
+===================== */
+.frase-card {
+  background: #fff;
+  border-radius: 30px;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.frase-card:hover {
+  transform: translateY(-10px);
+}
+.frase-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.frase-card p {
+  color: rgba(0, 0, 0, 0.9);
+}
+.frase-card .brand-tag {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 6px 16px;
+  background-color: black;
+  color: #9eff00;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 /* =====================
@@ -1103,7 +1072,8 @@ footer a:hover {
   color: #e6e6e6;
 }
 .serviciosdde p {
-  color: #bfbfbf;
+  font-size: 2.5rem;
+  color: #ffffff;
 }
 
 /* Cards */
@@ -1191,6 +1161,51 @@ ul li {
 .servicios-home .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 25px 60px rgba(216, 0, 255, 0.3);
+}
+
+/* =====================
+   CARD SEGUNDA (Servicios por proyecto)
+===================== */
+.servicios-contenido h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #e6e6e6;
+}
+.servicios-contenido p {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.cardsegunda {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.cardsegunda:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.cardsegunda .card-body {
+  padding: 40px 30px;
+}
+.cardsegunda .card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+.cardsegunda .darkp {
+  color: #555;
+  font-size: 1rem;
+}
+.cardsegunda .card-footer {
+  background-color: #ffffff;
+  border: none;
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

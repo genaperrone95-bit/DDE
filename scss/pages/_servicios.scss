@@ -6,7 +6,7 @@
    SERVICIOS DDE - ESTILO NUEVO
 ========================= */
 
-.serviciosdde {
+.serviciosdde, {
   background-color: #000;
   padding: 100px 0;
   position: relative;
@@ -24,9 +24,10 @@
   }
 
   p {
-    color: #bfbfbf;
+    font-size: 2.5rem;
+    color: #ffffff;
   }
-}  
+}
 
   /* Cards */
 
@@ -129,3 +130,55 @@
   }
 }  
 
+/* =====================
+   CARD SEGUNDA (Servicios por proyecto)
+===================== */
+.servicios-contenido {
+    h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #e6e6e6;
+  }
+
+  p {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+}
+
+.cardsegunda {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  transition: all .3s ease;
+  overflow: hidden; // evita que se rompa el radius
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-body {
+    padding: 40px 30px;
+  }
+
+  .card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #111;
+  }
+
+  .darkp {
+    color: #555;
+    font-size: 1rem;
+  }
+
+  .card-footer {
+    background-color: #ffffff;
+    border: none;
+    padding-bottom: 30px;
+  }
+}
