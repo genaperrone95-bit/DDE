@@ -50,19 +50,44 @@
 /* =====================
    MIXINS
 ===================== */
+/* =========================
+   RESET GLOBAL
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   BASE
+========================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #0f32a6;
   min-height: 100vh;
   transition: all 0.3s ease;
+  color: #e6e6e6;
+  /* Fondo principal */
+  background-color: #000;
+  /* Grid sutil global */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Opcional – glow sutil central premium */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 0, 200, 0.08), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* =====================
@@ -345,7 +370,6 @@ main {
    CONTACT PAGE
 ===================== */
 .contact-page {
-  background-color: #0f32a6;
   min-height: 100vh;
   padding-bottom: 60px;
 }
@@ -418,9 +442,8 @@ main {
 footer {
   width: 100%;
   text-align: center;
-  background-color: #0f32a6;
   color: #fff;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 footer p {
   margin: 8px 0;
