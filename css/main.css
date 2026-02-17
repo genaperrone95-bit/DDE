@@ -67,21 +67,9 @@ body {
   min-height: 100vh;
   transition: all 0.3s ease;
   color: #e6e6e6;
-  /* Fondo principal */
   background-color: #000;
-  /* Grid sutil global */
   background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
-}
-
-/* Opcional – glow sutil central premium */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at center, rgba(255, 0, 200, 0.08), transparent 60%);
-  pointer-events: none;
-  z-index: 0;
 }
 
 /* =====================
@@ -362,11 +350,6 @@ main {
   padding: 20px;
 }
 
-.equipo {
-  padding: 20px 0;
-  text-align: center;
-}
-
 /* =====================
    ABSTRACTS
 ===================== */
@@ -525,9 +508,15 @@ footer a:hover {
      NAVBAR
   ===================== */
   .custom-navbar {
+    background: rgba(0, 0, 0, 0.6);
     padding: 12px 0;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    /* ❌ quitamos background blanco para no tapar el grid global */
+  }
+  .custom-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .custom-navbar .navbar-toggler-icon {
+    filter: invert(1);
   }
   /* =====================
      CAROUSEL
@@ -599,6 +588,23 @@ footer a:hover {
     object-position: 50% 37%;
   }
   /* =====================
+     CONTACT FORM
+  ===================== */
+  .contact-section .container {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-section .contact-card {
+    width: 100%;
+  }
+  .contact-section .submit-container {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-section .btn.btn-dde {
+    margin: 0 auto;
+  }
+  /* =====================
      FOOTER
   ===================== */
   footer {
@@ -624,12 +630,6 @@ footer a:hover {
 /* =====================
    BUTTONS
 ===================== */
-/* Contenedor submit */
-.submit-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
 /* ---------------------
    BOTÓN BASE (override Bootstrap)
 --------------------- */
@@ -700,6 +700,9 @@ footer a:hover {
   border-radius: 50px !important;
   padding: 12px 30px;
   overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn.btn-dde:hover {
   background-color: #9eff00 !important;

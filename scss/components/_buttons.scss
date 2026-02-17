@@ -6,13 +6,6 @@
    BUTTONS
 ===================== */
 
-/* Contenedor submit */
-
-.submit-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
 /* ---------------------
    BOTÓN BASE (override Bootstrap)
 --------------------- */
@@ -70,6 +63,10 @@
   border-radius: 50px !important;
   padding: 12px 30px;
   overflow: hidden;
+
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: #9eff00 !important;

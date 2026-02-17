@@ -75,10 +75,21 @@
   ===================== */
 
   .custom-navbar {
+    
+    background: rgba(0, 0, 0, 0.6);
     padding: 12px 0;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    /* ❌ quitamos background blanco para no tapar el grid global */
+     
+    .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .navbar-toggler-icon {
+      filter: invert(1);
+    } 
   }
+  
+
 
   /* =====================
      CAROUSEL
@@ -174,6 +185,32 @@
     height: 150px;
     object-position: 50% 37%;
   }
+
+  /* =====================
+   CONTACT FORM
+===================== */
+
+.contact-section {
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+
+  .submit-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn.btn-dde {
+    margin: 0 auto;
+  }
+}
+
 
   /* =====================
      FOOTER
