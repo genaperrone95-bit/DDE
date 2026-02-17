@@ -3,6 +3,7 @@
 ===================== */
 @use "variables" ;
 @use "mixin";
+@use "pages/servicios";
 
 /* =====================
    BASE
@@ -28,7 +29,3 @@
 @use "components/carousel";
 @use "components/clients";
 
-/* =====================
-   PAGES
-===================== */
-@use "pages/servicios";

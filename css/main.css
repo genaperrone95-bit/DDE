@@ -39,6 +39,157 @@
    CARD BASE
 --------------------- */
 /* =====================
+   ABSTRACTS
+===================== */
+/* =========================
+   SERVICIOS DDE
+========================= */
+.serviciosdde {
+  background-color: #000;
+  padding: 100px 0;
+  position: relative;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.serviciosdde h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #e6e6e6;
+}
+.serviciosdde p {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* =========================
+   CARDS DDE
+========================= */
+.carddde {
+  background: linear-gradient(180deg, #d94ecb, #c837b9);
+  border-radius: 30px;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+  padding-top: 20px;
+}
+.carddde:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(216, 0, 255, 0.3);
+}
+
+.carddde .card-body {
+  padding: 40px 30px;
+}
+
+.carddde .card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.carddde .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.carddde ul li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.carddde .card-footer {
+  background: transparent !important;
+  padding-bottom: 40px;
+}
+
+/* =========================
+   SERVICIOS HOME
+========================= */
+.servicios-home {
+  background-color: #000;
+  padding: 100px 0;
+  position: relative;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.servicios-home h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #e6e6e6;
+}
+.servicios-home > .container > .text-center p {
+  color: #bfbfbf;
+  font-size: 1.1rem;
+}
+.servicios-home .service-card {
+  background: linear-gradient(180deg, #d94ecb, #c837b9);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.servicios-home .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(216, 0, 255, 0.3);
+}
+.servicios-home .service-card .card-body {
+  padding: 40px 30px;
+}
+.servicios-home .service-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.servicios-home .service-card p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* =====================
+   SERVICIOS POR PROYECTO
+===================== */
+.servicios-contenido h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #e6e6e6;
+}
+.servicios-contenido .servisiosletra p {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.cardsegunda {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.cardsegunda:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.cardsegunda .card-body {
+  padding: 40px 30px;
+}
+.cardsegunda .card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+.cardsegunda .darkp {
+  color: #555;
+  font-size: 1rem;
+}
+.cardsegunda .card-footer {
+  background-color: #ffffff;
+  border: none;
+  padding-bottom: 30px;
+}
+
+/* =====================
    BASE
 ===================== */
 /* =====================
@@ -342,7 +493,7 @@ main {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
 
-.col-md-4 {
+.resultados .col-md-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -847,7 +998,7 @@ footer a:hover {
 ===================== */
 #carouselExampleCaptions {
   width: 100%;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 65px);
 }
 #carouselExampleCaptions .carousel-inner,
 #carouselExampleCaptions .carousel-item {
@@ -1048,165 +1199,6 @@ footer a:hover {
 }
 .descriptionbelow a:hover .ver-mas {
   transform: translateY(-2px);
-}
-
-/* =====================
-   PAGES
-===================== */
-/* =====================
-   ABSTRACTS
-===================== */
-/* =========================
-   SERVICIOS DDE - ESTILO NUEVO
-========================= */
-.serviciosdde {
-  background-color: #000;
-  padding: 100px 0;
-  position: relative;
-  /* grid sutil de fondo */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-.serviciosdde h2 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #e6e6e6;
-}
-.serviciosdde p {
-  font-size: 2.5rem;
-  color: #ffffff;
-}
-
-/* Cards */
-.carddde {
-  background: linear-gradient(180deg, #d94ecb, #c837b9);
-  border-radius: 30px;
-  border: none;
-  color: white;
-  transition: all 0.3s ease;
-  padding-top: 20px;
-}
-.carddde:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(216, 0, 255, 0.3);
-}
-
-.card-body {
-  padding: 40px 30px;
-}
-
-.card-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.text-muted {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-ul li {
-  margin-bottom: 12px;
-  font-size: 1rem;
-}
-
-/* Footer */
-.card-footer {
-  background: transparent !important;
-  padding-bottom: 40px;
-}
-
-/* =========================
-   SERVICIOS HOME
-========================= */
-.servicios-home {
-  background-color: #000;
-  padding: 100px 0;
-  position: relative;
-  /* Grid sutil de fondo */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
-  /* Encabezado */
-}
-.servicios-home h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #e6e6e6;
-}
-.servicios-home > .container > .text-center p {
-  color: #bfbfbf;
-  font-size: 1.1rem;
-}
-.servicios-home {
-  /* Cards */
-}
-.servicios-home .service-card {
-  background: linear-gradient(180deg, #d94ecb, #c837b9);
-  border: none;
-  border-radius: 30px;
-  color: white;
-  transition: all 0.3s ease;
-}
-.servicios-home .service-card .card-body {
-  padding: 40px 30px;
-}
-.servicios-home .service-card h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-.servicios-home .service-card p {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-.servicios-home .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 60px rgba(216, 0, 255, 0.3);
-}
-
-/* =====================
-   CARD SEGUNDA (Servicios por proyecto)
-===================== */
-.servicios-contenido h2 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #e6e6e6;
-}
-.servicios-contenido .servisiosletra p {
-  font-size: 2.5rem;
-  color: #ffffff;
-}
-
-.cardsegunda {
-  background-color: #ffffff;
-  border-radius: 20px;
-  border: none;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.cardsegunda:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-.cardsegunda .card-body {
-  padding: 40px 30px;
-}
-.cardsegunda .card-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #111;
-}
-.cardsegunda .darkp {
-  color: #555;
-  font-size: 1rem;
-}
-.cardsegunda .card-footer {
-  background-color: #ffffff;
-  border: none;
-  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

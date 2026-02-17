@@ -7,7 +7,7 @@
 
 #carouselExampleCaptions {
   width: 100%;
-  height: calc(100vh - 56px);
+  height: calc(100vh - #{$header-height});
 
   .carousel-inner,
   .carousel-item {
@@ -78,7 +78,7 @@
     transition: $transition-fast;
 
     &:hover {
-      color: $orange;
+      color: $green-primary;
     }
   }
 }
