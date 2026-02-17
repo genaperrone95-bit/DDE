@@ -304,7 +304,7 @@ p {
   padding: 12px 0;
 }
 .custom-navbar.scrolled .navbar-brand {
-  color: #0f32a6;
+  color: #000;
 }
 .custom-navbar.scrolled .nav-link {
   color: #070404;
@@ -525,19 +525,9 @@ footer a:hover {
      NAVBAR
   ===================== */
   .custom-navbar {
-    background-color: #fff;
     padding: 12px 0;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  }
-  .custom-navbar .navbar-brand {
-    color: #0f32a6;
-  }
-  .custom-navbar .nav-link {
-    color: #070404;
-    font-weight: 500;
-  }
-  .custom-navbar .nav-link.active {
-    font-weight: 600;
+    /* ❌ quitamos background blanco para no tapar el grid global */
   }
   /* =====================
      CAROUSEL
@@ -568,22 +558,25 @@ footer a:hover {
     margin: 0;
   }
   /* =====================
-     ACERCA DE
+     TEAM
   ===================== */
-  .card-overlay {
-    opacity: 0.15;
+  .team-card {
+    padding: 25px 18px;
   }
-  /* =====================
-     TEAM CTA (ARREGLADO)
-  ===================== */
-}
-@media (max-width: 576px) and (max-width: 576px) {
-  .team-card .card-cta {
+  .team-card__img {
+    width: 100px;
+    height: 100px;
+  }
+  .team-card__name {
+    font-size: 1.1rem;
+  }
+  .team-card__description {
+    font-size: 0.85rem;
+  }
+  .team-card__cta {
     opacity: 1;
     transform: none;
   }
-}
-@media (max-width: 576px) {
   /* =====================
      CLIENTS
   ===================== */
@@ -729,57 +722,62 @@ footer a:hover {
    ABSTRACTS
 ===================== */
 /* =====================
-   nosotras
+   EQUIPO
 ===================== */
-.team-card {
-  background-color: #fff;
+.equipo .equipo-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+}
+.equipo .team-card {
+  background: #ffffff;
   border: none;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
-.team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+.equipo .team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
-.team-card .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.team-card .card-title {
-  font-weight: 600;
-}
-.team-card .card-text {
-  font-size: 0.9rem;
-}
-
-.team-card p:last-child {
-  margin-bottom: 0;
-}
-
-.team-img {
+.equipo .team-card__img {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  position: static;
+  margin-bottom: 20px;
 }
-
-.team-modal {
-  max-width: 620px;
+.equipo .team-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.team-modal .modal-content {
-  background-color: #fff;
+.equipo .team-card__name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
 }
-.team-modal img {
-  border-radius: 8px;
+.equipo .team-card__role {
+  font-size: 0.95rem;
+  color: #777;
+  margin: 0;
+}
+.equipo .team-card__description {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0;
+}
+.equipo .team-card__cta {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7b2cbf;
 }
 
 /*=====================
@@ -1077,7 +1075,7 @@ footer a:hover {
 }
 
 /* Cards */
-.card {
+.carddde {
   background: linear-gradient(180deg, #d94ecb, #c837b9);
   border-radius: 30px;
   border: none;
@@ -1085,7 +1083,7 @@ footer a:hover {
   transition: all 0.3s ease;
   padding-top: 20px;
 }
-.card:hover {
+.carddde:hover {
   transform: translateY(-12px);
   box-shadow: 0 25px 60px rgba(216, 0, 255, 0.3);
 }
@@ -1171,7 +1169,7 @@ ul li {
   font-weight: 800;
   color: #e6e6e6;
 }
-.servicios-contenido p {
+.servicios-contenido .servisiosletra p {
   font-size: 2.5rem;
   color: #ffffff;
 }

@@ -5,6 +5,7 @@
    RESPONSIVE
 ===================== */
 
+
 /* 📱 Tablet & abajo */
 @include tablet {
 
@@ -74,22 +75,9 @@
   ===================== */
 
   .custom-navbar {
-    background-color: $white;
     padding: 12px 0;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-
-    .navbar-brand {
-      color: $primary-color;
-    }
-
-    .nav-link {
-      color: $text-dark;
-      font-weight: 500;
-    }
-
-    .nav-link.active {
-      font-weight: 600;
-    }
+    /* ❌ quitamos background blanco para no tapar el grid global */
   }
 
   /* =====================
@@ -135,22 +123,29 @@
   }
 
   /* =====================
-     ACERCA DE
+     TEAM
   ===================== */
 
-  .card-overlay {
-    opacity: 0.15;
+  .team-card {
+    padding: 25px 18px;
   }
 
-  /* =====================
-     TEAM CTA (ARREGLADO)
-  ===================== */
+  .team-card__img {
+    width: 100px;
+    height: 100px;
+  }
 
-  @include mobile {
-    .team-card .card-cta {
-      opacity: 1;
-      transform: none;
-    }
+  .team-card__name {
+    font-size: 1.1rem;
+  }
+
+  .team-card__description {
+    font-size: 0.85rem;
+  }
+
+  .team-card__cta {
+    opacity: 1;
+    transform: none;
   }
 
   /* =====================
@@ -200,4 +195,5 @@
       font-size: 12px;
     }
   }
+
 }

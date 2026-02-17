@@ -6,32 +6,32 @@
    SERVICIOS DDE - ESTILO NUEVO
 ========================= */
 
-.serviciosdde, {
-  background-color: #000;
-  padding: 100px 0;
-  position: relative;
+  .serviciosdde {
+    background-color: #000;
+    padding: 100px 0;
+    position: relative;
 
-  /* grid sutil de fondo */
-  background-image:
-    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-  background-size: 60px 60px;
+    /* grid sutil de fondo */
+    background-image:
+      linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size: 60px 60px;
 
-  h2 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #e6e6e6;
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #e6e6e6;
+    }
+
+    p {
+      font-size: 2.5rem;
+      color: #ffffff;
+    }
   }
-
-  p {
-    font-size: 2.5rem;
-    color: #ffffff;
-  }
-}
 
   /* Cards */
 
-  .card {
+  .carddde {
     background: linear-gradient(180deg, #d94ecb, #c837b9);
     border-radius: 30px;
     border: none;
@@ -140,7 +140,7 @@
     color: #e6e6e6;
   }
 
-  p {
+  .servisiosletra p {
     font-size: 2.5rem;
     color: #ffffff;
   }
