@@ -15,9 +15,13 @@
     gap: 60px;
     align-items: center;
   }
+  > * {
+    min-width: 0;
+  }
 
   .acerca-video iframe {
     width: 100%;
+    max-width: 100%;
     height: 350px;
     border-radius: 20px;
     box-shadow: 0 30px 60px rgba(0,0,0,.2);
