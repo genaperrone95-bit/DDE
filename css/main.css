@@ -998,6 +998,7 @@ footer a:hover {
    CAROUSEL
 ===================== */
 #carouselExampleCaptions {
+  overflow: hidden;
   width: 100%;
   height: calc(100vh - 65px);
 }
@@ -1046,6 +1047,7 @@ footer a:hover {
   font-size: 1rem;
   text-align: center;
   backdrop-filter: blur(4px);
+  max-width: 100%;
 }
 .carousel-caption h3 {
   margin: 0;
@@ -1069,9 +1071,10 @@ footer a:hover {
 ===================== */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 8%;
+  width: 6%;
   opacity: 1;
   z-index: 5;
+  overflow: hidden;
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
