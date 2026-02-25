@@ -137,3 +137,39 @@
     font-size: .8rem;
   }
 }
+
+/*=====================
+   PROCESO CARD
+=====================*/
+
+
+.proceso {
+    color: rgb(250, 250, 250);
+}
+
+.card-proceso {
+    background: $green-primary;
+    color: #333;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-proceso:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card-proceso .icono {
+    font-size: 40px;
+}
+
+.card-proceso h5 {
+    font-size: 18px;
+}
+
+.card-proceso p {
+    font-size: 14px;
+    margin-top: 10px;
+}
