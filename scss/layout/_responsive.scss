@@ -211,6 +211,40 @@
   }
 }
 
+/* =====================
+   MINI INSTAGRAM
+===================== */
+
+.mini-instagram {
+
+  padding: 60px 15px; // menos aire lateral
+
+  .instagram-card {
+    padding: 30px 20px; 
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%; 
+  }
+
+  .btn-instagram {
+    width: 100%; 
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
 
   /* =====================
      FOOTER
