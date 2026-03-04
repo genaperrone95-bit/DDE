@@ -79,5 +79,45 @@
   }
 }
 
+/* AGENDA + CALENDLY LAYOUT */
 
+.agenda-calendly-section {
+  padding: 60px 20px;
+  color: $text-light;
+
+  .agenda-info {
+    padding-right: 40px;
+
+    h2 {
+      font-size: $h2-size;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: $text-light;
+    }
+
+    p {
+      font-size: $p-size;
+      color: $text-light;
+    }
+
+    .beneficios-contacto {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+
+      p {
+        font-size: $p-size;
+        margin: 0;
+        color: $green-primary;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .calendly-inline-widget {
+    border-radius: $radius-lg;
+    overflow: hidden;
+  }
+}
 

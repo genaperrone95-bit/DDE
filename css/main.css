@@ -572,6 +572,41 @@ main {
   border-color: #000;
 }
 
+/* AGENDA + CALENDLY LAYOUT */
+.agenda-calendly-section {
+  padding: 60px 20px;
+  color: #fff;
+}
+.agenda-calendly-section .agenda-info {
+  padding-right: 40px;
+}
+.agenda-calendly-section .agenda-info h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.agenda-calendly-section .agenda-info p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+.agenda-calendly-section .agenda-info .beneficios-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.agenda-calendly-section .agenda-info .beneficios-contacto p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #a9ea2b;
+  font-weight: 500;
+}
+.agenda-calendly-section .calendly-inline-widget {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 /* =====================
    ABSTRACTS
 ===================== */
@@ -626,6 +661,17 @@ footer a:hover {
   }
   #carouselExampleCaptions .carousel-item img {
     object-position: center top;
+  }
+  /* =====================
+     AGENDA + CALENDLY
+  ===================== */
+  .agenda-calendly-section {
+    padding: 50px 20px;
+  }
+  .agenda-calendly-section .agenda-info {
+    padding-right: 0;
+    margin-bottom: 35px;
+    text-align: center;
   }
   footer {
     padding: 20px 15px;
@@ -740,7 +786,7 @@ footer a:hover {
     object-position: 50% 37%;
   }
   /* =====================
-     CONTACT FORM
+     CONTACT
   ===================== */
   .contact-section .container {
     display: flex;
@@ -755,6 +801,22 @@ footer a:hover {
   }
   .contact-section .btn.btn-dde {
     margin: 0 auto;
+  }
+  /* =====================
+     AGENDA + CALENDLY
+  ===================== */
+  .agenda-calendly-section {
+    padding: 40px 15px;
+  }
+  .agenda-calendly-section .agenda-info {
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .agenda-calendly-section .calendly-inline-widget {
+    min-width: unset !important;
+    width: 100%;
+    height: 600px;
   }
   /* =====================
      MINI INSTAGRAM

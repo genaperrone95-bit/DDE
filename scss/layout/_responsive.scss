@@ -31,6 +31,20 @@
     }
   }
 
+  /* =====================
+     AGENDA + CALENDLY
+  ===================== */
+
+  .agenda-calendly-section {
+    padding: 50px 20px;
+
+    .agenda-info {
+      padding-right: 0;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+  }
+
   footer {
     padding: 20px 15px;
     text-align: center;
@@ -75,20 +89,18 @@
   ===================== */
 
   .custom-navbar {
-    
     background: rgba(0, 0, 0, 0.6);
     padding: 12px 0;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-     
+
     .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.3);
     }
 
     .navbar-toggler-icon {
       filter: invert(1);
-    } 
+    }
   }
-  
 
 
   /* =====================
@@ -187,64 +199,82 @@
   }
 
   /* =====================
-   CONTACT FORM
-===================== */
+     CONTACT
+  ===================== */
 
-.contact-section {
+  .contact-section {
 
-  .container {
-    display: flex;
-    justify-content: center;
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact-card {
+      width: 100%;
+    }
+
+    .submit-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn.btn-dde {
+      margin: 0 auto;
+    }
   }
 
-  .contact-card {
-    width: 100%;
+  /* =====================
+     AGENDA + CALENDLY
+  ===================== */
+
+  .agenda-calendly-section {
+    padding: 40px 15px;
+
+    .agenda-info {
+      padding-right: 0;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .calendly-inline-widget {
+      min-width: unset !important;
+      width: 100%;
+      height: 600px;
+    }
   }
 
-  .submit-container {
-    display: flex;
-    justify-content: center;
+  /* =====================
+     MINI INSTAGRAM
+  ===================== */
+
+  .mini-instagram {
+    padding: 60px 15px;
+
+    .instagram-card {
+      padding: 30px 20px;
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .btn-instagram {
+      width: 100%;
+      padding: 12px;
+      font-size: 0.9rem;
+    }
   }
-
-  .btn.btn-dde {
-    margin: 0 auto;
-  }
-}
-
-/* =====================
-   MINI INSTAGRAM
-===================== */
-
-.mini-instagram {
-
-  padding: 60px 15px; 
-
-  .instagram-card {
-    padding: 30px 20px; 
-    max-width: 100%;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-    line-height: 1.3;
-  }
-
-  p {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-  }
-
-  img {
-    max-width: 100%; 
-  }
-
-  .btn-instagram {
-    width: 100%; 
-    padding: 12px;
-    font-size: 0.9rem;
-  }
-}
-
 
   /* =====================
      FOOTER
