@@ -10,11 +10,12 @@
   width: 100%;
   z-index: $z-navbar;
   padding: 18px 0;
-
   background: transparent;
   transition: all 0.3s ease;
 
   .navbar-brand {
+    display: flex;
+    align-items: center;
     color: $white;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -36,7 +37,6 @@
     }
   }
 
- 
   &.scrolled {
     background-color: $white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -49,9 +49,21 @@
     .nav-link {
       color: $text-dark;
     }
+
+    .navbar-logo {
+      filter: invert(0);
+    }
   }
 }
 
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 8px;
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
 
 main {
   padding-top: $header-height;
@@ -59,17 +71,16 @@ main {
 
 .resultados {
   background-color: $green-primary;
-  }
+}
 
 .proceso {
   background-color: $gold;
-  }
-
+}
 
 .servicios-hero {
   background-color: $green-primary;
-  }
-  
+}
+
 .servicios-contenido {
   background-color: $gold;
   color: $text-dark;
