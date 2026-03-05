@@ -17,21 +17,24 @@ html {
 }
 
 body {
- /* overflow-x: hidden; */
   font-family: $font-primary;
   font-weight: 400;
   font-style: normal;
   min-height: 100vh;
   transition: $transition-fast;
   color: #e6e6e6;
-
-
   background-color: #000;
+  position: relative;
 
-  
-  background-image:
-    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-  background-size: 60px 60px;
+  &::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
 }
 
