@@ -1,40 +1,128 @@
 @use "../variables" as *;
 @use "../mixin" as *;
 
-/* =====================
-   GRID + VIDEO
-===================== */
-
+// ── HERO ──────────────────────────
 .acerca-de {
-  background: linear-gradient(to bottom, #a9ea2b, #a9ea2b);
-  padding: 100px 0;
+  padding: 80px 0 60px;
+}
 
-  .acerca-wrapper {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 60px;
-    align-items: center;
+.acerca-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
 
-    > * {
-      min-width: 0;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    gap: 36px;
+    text-align: center;
+  }
+}
+
+
+// ── FOTO CON MARCO ────────────────
+.acerca-foto {
+  flex: 0 0 auto;
+  width: 340px;
+  max-width: 100%;
+
+  @media (max-width: $tablet) {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__frame {
+    border: 3px solid $gold;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba($gold, 0.25);
+    position: relative;
+
+    img {
+    width: 100%;
+    height: 520px;           // altura que quieras
+    display: block;
+    object-fit: cover;
+    object-position: top;    // top | center | bottom | 50% 20% | etc.
+  }
+  }
+
+  &__labels {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 24px;
+
+    span {
+      font-family: $font-primary;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: rgba( $gold, 0.45);
+      padding: 2px 8px;
+      border-radius: $radius-sm;
     }
   }
+}
 
-  .acerca-video iframe {
-    width: 100%;
-    height: 350px;
-    border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+
+// ── TEXTO ─────────────────────────
+.acerca-texto {
+  flex: 1 1 300px;
+  color: $text-light;
+
+  .intro-label {
+    font-family: $font-primary;
+    font-size: 1rem;
+    font-style: italic;
+    color: $gold;
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+  }
+
+  h1 {
+    font-family: $font-primary;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $text-light;
+    margin: 0 0 24px;
+    line-height: 1.1;
+  }
+
+  p {
+    font-family: $font-primary;
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #ffffff;
+  }
+
+  .hl {
+    color: $gold;
+    font-weight: 700;
   }
 }
 
-
-.resultados .col-md-4 {
-  display: flex;
-  flex-direction: column;
+.acerca-badge {
+  display: inline-flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  margin-top: 28px;
+  background: $gold;
+  color: $black;
+  font-family: $font-primary;
+  font-weight: 900;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  padding: 5px 14px;
+  border-radius: 20px;
 }
+
+
+
 
 
