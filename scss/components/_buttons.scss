@@ -54,6 +54,12 @@
    BOTÓN DDE
 --------------------- */
 
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(158, 255, 0, 0.4); }
+  50%       { box-shadow: 0 0 0 10px rgba(158, 255, 0, 0); }
+}
+
+
 .btn.btn-dde {
   @extend %btn-base;
 
@@ -63,6 +69,7 @@
   border-radius: 50px !important;
   padding: 12px 30px;
   overflow: hidden;
+  animation: pulse 2s infinite;
 
   display: inline-flex; 
   justify-content: center;
@@ -71,6 +78,7 @@
   &:hover {
     background-color: #9eff00 !important;
     color: black !important;
+    animation: none
   }
 }
 
