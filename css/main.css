@@ -227,6 +227,11 @@ body::before {
   background-size: 60px 60px;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* =====================
    ABSTRACTS
 ===================== */
