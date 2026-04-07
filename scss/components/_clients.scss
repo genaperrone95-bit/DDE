@@ -26,13 +26,13 @@
 }
 
 .client-card {
-  background: $white;
+  background: rgba(253, 253, 253, 0.205);
   padding: 40px;
   min-height: 180px;
   border-radius: $radius-lg;
   box-shadow: $shadow-soft;
   transition: transform $transition-fast, box-shadow $transition-fast;
-
+  border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +49,7 @@
   &:hover {
     transform: translateY(-6px);
     box-shadow: $shadow-hover;
+    background: rgba(255, 255, 255, 0.897);
 
     img {
       filter: grayscale(0%);
